@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -g   CMakeFiles/9BoardTicTacToe.dir/main.cpp.o CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o  -o 9BoardTicTacToe 
