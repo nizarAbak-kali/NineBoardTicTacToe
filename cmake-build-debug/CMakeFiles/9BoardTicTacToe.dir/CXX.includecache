@@ -6,45 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/nizar/ClionProjects/9BoardTicTacToe/Board.cpp
+/home/nizar/CLionProjects/NineBoardTicTacToe/Board.cpp
 includes/Board.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Board.h
 
-/home/nizar/ClionProjects/9BoardTicTacToe/Coup.cpp
+/home/nizar/CLionProjects/NineBoardTicTacToe/Coup.cpp
 includes/Coup.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Coup.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Coup.h
 
-/home/nizar/ClionProjects/9BoardTicTacToe/Player.cpp
+/home/nizar/CLionProjects/NineBoardTicTacToe/Player.cpp
 includes/Player.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Player.h
-includes/Board.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Player.h
 
-/home/nizar/ClionProjects/9BoardTicTacToe/ia.cpp
+/home/nizar/CLionProjects/NineBoardTicTacToe/ia.cpp
 
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Board.h
 structs.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/structs.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/structs.h
 Cell.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Cell.h
-
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Cell.h
-structs.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/structs.h
-
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Coup.h
-structs.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/structs.h
-
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Player.h
-structs.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/structs.h
-Board.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Cell.h
 Coup.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Coup.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Coup.h
 
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/structs.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Cell.h
+structs.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/structs.h
+
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Coup.h
+structs.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/structs.h
+
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Player.h
+structs.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/structs.h
+Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Board.h
+Coup.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Coup.h
+
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/structs.h
 cstdlib
 -
 iostream
@@ -53,14 +53,12 @@ fstream
 -
 string
 -
-boost/algorithm/string.hpp
+vector
 -
 
-/home/nizar/ClionProjects/9BoardTicTacToe/main.cpp
+/home/nizar/CLionProjects/NineBoardTicTacToe/main.cpp
 iostream
 -
-ia.cpp
-/home/nizar/ClionProjects/9BoardTicTacToe/ia.cpp
 includes/Board.h
-/home/nizar/ClionProjects/9BoardTicTacToe/includes/Board.h
+/home/nizar/CLionProjects/NineBoardTicTacToe/includes/Board.h
 

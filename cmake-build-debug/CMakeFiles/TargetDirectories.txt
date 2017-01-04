@@ -1,3 +1,3 @@
-/home/nizar/ClionProjects/9BoardTicTacToe/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/nizar/ClionProjects/9BoardTicTacToe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/nizar/ClionProjects/9BoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir
+/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir
