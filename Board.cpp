@@ -7,22 +7,30 @@
 Board::Board() {
     this->length = TABLE_LENGTH;
 
+    this->cell_courrante.first = 1;
+    this->cell_courrante.second = 1;
+    this->cell_old.first = cell_courrante.first;
+    this->cell_old.second = cell_courrante.second;
 }
 
 Board::~Board() {
-    free(this->tab);
+    //free(this->tab);
 }
 
 void Board::print() {
     cout<< "the board :"<<endl;
     string s ;
-    for (int l = 0; l < length; l++) {
-        for (int j = 0; j < length; j++) {
-            cout << l << " " << j << " : " <<endl;
-            this->tab[l][j].print() ;
 
+    for (int etage = 0; etage < length; etage++) {
+        for (int y = 0; y < length; y++) {
+            for (int cell = 0; cell < length; ++cell) {
+                cout << this->tab[etage][cell].getLine(y);
+                cout << "\t";
+            }
+
+            cout << "\n";
         }
-
+        cout << "\n";
     }
 
 }
@@ -32,26 +40,16 @@ Cell Board::get(int x, int y) {
     return tab[x][y];
 }
 
-void Board::set(int x, int y, int val) {
-    tab[x][y].set(x,y,val);
+void Board::set(int xcell, int ycell, int x, int y, int val) {
+    tab[ycell][xcell].set(x, y, val);
 }
 
 
 string Board::toString() {
-    string s = "";
+    string s = "Cellule courrante ";
+    s += to_string(cell_courrante.first) + "  " + to_string(cell_courrante.second) + "\n";
 
-    for (int l = 0; l < length; l++) {
-        for (int j = 0; j < length; j++) {
-            for (int k = 0; k < length; k++) {
-                for (int i = 0; k < length; k++) {
-                    s += this->tab[l][k].get(j, i) + " ";
-                }
-                s += "\t";
 
-            }
-            s = s + "\n";
-        }
-    }
     return s;
 }
 

@@ -31,6 +31,15 @@ public:
         return this->tab[x][y] ;
     }
 
+    string getLine(int y) {
+        string n = "";
+        for (int i = 0; i < TABLE_LENGTH; ++i) {
+            n += to_string(get(i, y)) + " ";
+        }
+        return n;
+    }
+
+
     void print(){
         for(int  i = 0;i < TABLE_LENGTH; i++){
             for(int j = 0 ;j < TABLE_LENGTH;j++){

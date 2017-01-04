@@ -9,7 +9,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <boost/algorithm/string.hpp>
+#include <vector>
 
 #define TABLE_LENGTH 3
 #define NUM_CELL 9

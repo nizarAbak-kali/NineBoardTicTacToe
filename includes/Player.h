@@ -18,7 +18,7 @@ public:
 
     Player(string nom,bool tour,int pieces);
 
-    void joue(Board &board, int x, int y, int val);
+    void joue(Board &board, int xc, int yc);
 };
 
 

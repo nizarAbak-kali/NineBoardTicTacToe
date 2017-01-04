@@ -3,10 +3,11 @@
 //
 
 #include "includes/Player.h"
-#include "includes/Board.h"
 
-void Player::joue(Board& board,int x, int y, int val) {
-    board.set(x,y,val);
+void Player::joue(Board &board, int xc, int yc) {
+    Coup nouveau(this->pieces, pair<int, int>(xc, yc));
+    board.joue(nouveau);
+
 }
 
 Player::Player(string nom, bool tour, int pieces) {
