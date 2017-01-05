@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nizar/CLionProjects/NineBoardTicTacToe/Board.cpp" "/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o"
-  "/home/nizar/CLionProjects/NineBoardTicTacToe/Coup.cpp" "/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o"
-  "/home/nizar/CLionProjects/NineBoardTicTacToe/Player.cpp" "/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o"
-  "/home/nizar/CLionProjects/NineBoardTicTacToe/ia.cpp" "/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o"
-  "/home/nizar/CLionProjects/NineBoardTicTacToe/main.cpp" "/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/main.cpp.o"
+  "/home/nizar/ClionProjects/NineBoardTicTacToe/Board.cpp" "/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o"
+  "/home/nizar/ClionProjects/NineBoardTicTacToe/Coup.cpp" "/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o"
+  "/home/nizar/ClionProjects/NineBoardTicTacToe/Player.cpp" "/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o"
+  "/home/nizar/ClionProjects/NineBoardTicTacToe/ia.cpp" "/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o"
+  "/home/nizar/ClionProjects/NineBoardTicTacToe/main.cpp" "/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

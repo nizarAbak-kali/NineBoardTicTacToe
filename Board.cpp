@@ -48,8 +48,6 @@ void Board::set(int xcell, int ycell, int x, int y, int val) {
 string Board::toString() {
     string s = "Cellule courrante ";
     s += to_string(cell_courrante.first) + "  " + to_string(cell_courrante.second) + "\n";
-
-
     return s;
 }
 

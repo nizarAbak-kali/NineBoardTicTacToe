@@ -5,6 +5,3 @@
 
 //fichier qui contiendra les differents algos d'ia
 
-
-
-

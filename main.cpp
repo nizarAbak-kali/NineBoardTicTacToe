@@ -1,45 +1,27 @@
 #include <iostream>
 #include "includes/Board.h"
-
+#include "includes/IA_MINIMAX.h"
 
 
 
 int main() {
     std::cout << "Hello, World !" << std::endl;
     Board b;
-
-    b.print();
-    cout << b.toString() << endl;
-    Coup a(COUP_O, pair<int, int>(1, 2));
-    b.joue(a);
-    b.print();
-    cout << b.toString() << endl;
-
-    Coup a1(COUP_X, pair<int, int>(0, 0));
-    b.joue(a1);
-    b.print();
-    cout << b.toString() << endl;
-
-    Coup a2(COUP_O, pair<int, int>(2, 1));
-    b.joue(a2);
-    b.print();
-    cout << b.toString() << endl;
-
-    b.dejoue(a2);
-    b.print();
-    cout << b.toString() << endl;
-
-    b.dejoue(a1);
-    b.print();
-    cout << b.toString() << endl;
+    IA_MINIMAX ia1("minimaxi", true, COUP_X, b, 4);
+    IA_MINIMAX ia2("minimaximax", false, COUP_O, b, 4);
 
 
-    b.dejoue(a);
-    b.print();
-    cout << b.toString() << endl;
-
-
-
+    while (b.quiGagne() == COUP_VIDE) {
+        cout << "Vainqueur !! ->" << b.code(b.quiGagne()) << endl;
+        cout << "JOUEUR 1 joue !!" << endl;
+        ia1.joue();
+        b.print();
+        cout << b.toString() << endl;
+        cout << "JOUEUR 2 joue !!" << endl;
+        ia2.joue();
+        b.print();
+        cout << b.toString() << endl;
+    }
 
     return 0;
 }

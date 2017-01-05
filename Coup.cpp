@@ -11,6 +11,18 @@ Coup::Coup(int qui, pair<int, int> pos_c) {
 
 }
 
+const pair<int, int> &Coup::getPosition_cell() const {
+    return position_cell;
+}
+
+void Coup::setQui(int qui) {
+    Coup::qui = qui;
+}
+
+int Coup::getQui() const {
+    return qui;
+}
+
 
 
 /*

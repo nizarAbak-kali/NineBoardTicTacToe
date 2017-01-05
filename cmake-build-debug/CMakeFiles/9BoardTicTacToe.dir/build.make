@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nizar/install/clion-2016.3.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2016.2.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/nizar/install/clion-2016.3.2/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2016.2.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/CLionProjects/NineBoardTicTacToe
+CMAKE_SOURCE_DIR = /home/nizar/ClionProjects/NineBoardTicTacToe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/9BoardTicTacToe.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/9BoardTicTacToe.dir/flags.make
 
 CMakeFiles/9BoardTicTacToe.dir/main.cpp.o: CMakeFiles/9BoardTicTacToe.dir/flags.make
 CMakeFiles/9BoardTicTacToe.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/main.cpp.o -c /home/nizar/CLionProjects/NineBoardTicTacToe/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/main.cpp.o -c /home/nizar/ClionProjects/NineBoardTicTacToe/main.cpp
 
 CMakeFiles/9BoardTicTacToe.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/9BoardTicTacToe.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/CLionProjects/NineBoardTicTacToe/main.cpp > CMakeFiles/9BoardTicTacToe.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/ClionProjects/NineBoardTicTacToe/main.cpp > CMakeFiles/9BoardTicTacToe.dir/main.cpp.i
 
 CMakeFiles/9BoardTicTacToe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/9BoardTicTacToe.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/CLionProjects/NineBoardTicTacToe/main.cpp -o CMakeFiles/9BoardTicTacToe.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/ClionProjects/NineBoardTicTacToe/main.cpp -o CMakeFiles/9BoardTicTacToe.dir/main.cpp.s
 
 CMakeFiles/9BoardTicTacToe.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/9BoardTicTacToe.dir/main.cpp.o.provides.build: CMakeFiles/9BoardTicTa
 
 CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o: CMakeFiles/9BoardTicTacToe.dir/flags.make
 CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o -c /home/nizar/CLionProjects/NineBoardTicTacToe/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o -c /home/nizar/ClionProjects/NineBoardTicTacToe/Board.cpp
 
 CMakeFiles/9BoardTicTacToe.dir/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/9BoardTicTacToe.dir/Board.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/CLionProjects/NineBoardTicTacToe/Board.cpp > CMakeFiles/9BoardTicTacToe.dir/Board.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/ClionProjects/NineBoardTicTacToe/Board.cpp > CMakeFiles/9BoardTicTacToe.dir/Board.cpp.i
 
 CMakeFiles/9BoardTicTacToe.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/9BoardTicTacToe.dir/Board.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/CLionProjects/NineBoardTicTacToe/Board.cpp -o CMakeFiles/9BoardTicTacToe.dir/Board.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/ClionProjects/NineBoardTicTacToe/Board.cpp -o CMakeFiles/9BoardTicTacToe.dir/Board.cpp.s
 
 CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/9BoardTicTacToe.dir/Board.cpp.o.provides.build: CMakeFiles/9BoardTicT
 
 CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o: CMakeFiles/9BoardTicTacToe.dir/flags.make
 CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o: ../ia.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o -c /home/nizar/CLionProjects/NineBoardTicTacToe/ia.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o -c /home/nizar/ClionProjects/NineBoardTicTacToe/ia.cpp
 
 CMakeFiles/9BoardTicTacToe.dir/ia.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/9BoardTicTacToe.dir/ia.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/CLionProjects/NineBoardTicTacToe/ia.cpp > CMakeFiles/9BoardTicTacToe.dir/ia.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/ClionProjects/NineBoardTicTacToe/ia.cpp > CMakeFiles/9BoardTicTacToe.dir/ia.cpp.i
 
 CMakeFiles/9BoardTicTacToe.dir/ia.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/9BoardTicTacToe.dir/ia.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/CLionProjects/NineBoardTicTacToe/ia.cpp -o CMakeFiles/9BoardTicTacToe.dir/ia.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/ClionProjects/NineBoardTicTacToe/ia.cpp -o CMakeFiles/9BoardTicTacToe.dir/ia.cpp.s
 
 CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/9BoardTicTacToe.dir/ia.cpp.o.provides.build: CMakeFiles/9BoardTicTacT
 
 CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o: CMakeFiles/9BoardTicTacToe.dir/flags.make
 CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o -c /home/nizar/CLionProjects/NineBoardTicTacToe/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o -c /home/nizar/ClionProjects/NineBoardTicTacToe/Player.cpp
 
 CMakeFiles/9BoardTicTacToe.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/9BoardTicTacToe.dir/Player.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/CLionProjects/NineBoardTicTacToe/Player.cpp > CMakeFiles/9BoardTicTacToe.dir/Player.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/ClionProjects/NineBoardTicTacToe/Player.cpp > CMakeFiles/9BoardTicTacToe.dir/Player.cpp.i
 
 CMakeFiles/9BoardTicTacToe.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/9BoardTicTacToe.dir/Player.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/CLionProjects/NineBoardTicTacToe/Player.cpp -o CMakeFiles/9BoardTicTacToe.dir/Player.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/ClionProjects/NineBoardTicTacToe/Player.cpp -o CMakeFiles/9BoardTicTacToe.dir/Player.cpp.s
 
 CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/9BoardTicTacToe.dir/Player.cpp.o.provides.build: CMakeFiles/9BoardTic
 
 CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o: CMakeFiles/9BoardTicTacToe.dir/flags.make
 CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o: ../Coup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o -c /home/nizar/CLionProjects/NineBoardTicTacToe/Coup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o -c /home/nizar/ClionProjects/NineBoardTicTacToe/Coup.cpp
 
 CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/CLionProjects/NineBoardTicTacToe/Coup.cpp > CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/ClionProjects/NineBoardTicTacToe/Coup.cpp > CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.i
 
 CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/CLionProjects/NineBoardTicTacToe/Coup.cpp -o CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/ClionProjects/NineBoardTicTacToe/Coup.cpp -o CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.s
 
 CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o.requires:
 
@@ -195,7 +195,7 @@ CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o.provides.build: CMakeFiles/9BoardTicTa
 9BoardTicTacToe: CMakeFiles/9BoardTicTacToe.dir/Coup.cpp.o
 9BoardTicTacToe: CMakeFiles/9BoardTicTacToe.dir/build.make
 9BoardTicTacToe: CMakeFiles/9BoardTicTacToe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable 9BoardTicTacToe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable 9BoardTicTacToe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/9BoardTicTacToe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +216,6 @@ CMakeFiles/9BoardTicTacToe.dir/clean:
 .PHONY : CMakeFiles/9BoardTicTacToe.dir/clean
 
 CMakeFiles/9BoardTicTacToe.dir/depend:
-	cd /home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/CLionProjects/NineBoardTicTacToe /home/nizar/CLionProjects/NineBoardTicTacToe /home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug /home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug /home/nizar/CLionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/ClionProjects/NineBoardTicTacToe /home/nizar/ClionProjects/NineBoardTicTacToe /home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug /home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug /home/nizar/ClionProjects/NineBoardTicTacToe/cmake-build-debug/CMakeFiles/9BoardTicTacToe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/9BoardTicTacToe.dir/depend
 

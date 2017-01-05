@@ -20,15 +20,7 @@ using namespace std;
 
 static inline int lc2p(int l, int c){ return l * NUM_CELL + c; }
 
-static inline char code(int val){
-    if (val == COUP_VIDE)
-        return '_';
-    if (val == COUP_X)
-        return 'X';
-     if (val == COUP_O)
-        return 'O';
 
-}
 
 
 

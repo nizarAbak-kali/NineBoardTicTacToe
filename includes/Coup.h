@@ -11,14 +11,30 @@ class Coup {
 public:
     pair<int, int> position_cell;
     pair<int, int> old_cell;
+
+    const pair<int, int> &getPosition_cell() const;
+
+    int getQui() const;
+
     int qui;
 
     Coup(int qui, pair<int, int> pos_cell);
 
+    Coup() {}
+
+    void set_position(int first, int second) {
+        this->position_cell.first = first;
+        this->position_cell.second = second;
+    }
+
+
+
     void print() {
-        cout << "old coup :" << old_cell.first << "  " << old_cell.second;
+        // cout << "old coup :" << old_cell.first << "  " << old_cell.second;
     }
     string toString();
+
+    void setQui(int qui);
 
 };
 
