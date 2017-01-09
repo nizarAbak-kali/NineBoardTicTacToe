@@ -45,7 +45,9 @@ public:
             COUP_VIDE) {
             return false;
         }
-        //cout << "COUP JOUE" << endl;
+        if (DEBUG)
+            cout << "Cellule courrante " << this->cell_courrante.first << " , " << this->cell_courrante.second
+                 << " | COUP JOUE " << a.position_cell.first << " , " << a.position_cell.second << endl;
 
         pair_cp(&a.old_cell, &cell_courrante);
 
@@ -70,7 +72,9 @@ public:
         a.print();
         this->set(this->cell_courrante.first, this->cell_courrante.second,
                   a.position_cell.first, a.position_cell.second, COUP_VIDE);
-
+        if (DEBUG)
+            cout << "Cellule courrante " << this->cell_courrante.first << " , " << this->cell_courrante.second
+                 << " | COUP JOUE " << a.position_cell.first << " , " << a.position_cell.second << endl;
         return true;
     }
 
@@ -97,8 +101,12 @@ public:
             for (int j = 0; j < TABLE_LENGTH; ++j) {
                 // tab[i][j].print();
                 res = tab[i][j].quiGagneCell();
+
                 if (res != COUP_VIDE) {
-                    tab[i][j].print();
+                    if (DEBUG) {
+                        cout << "CELL " << i << " , " << j << endl;
+                        tab[i][j].print();
+                    }
                     return res;
                 }
             }
@@ -117,6 +125,9 @@ public:
         return true;
     }
 
+    vector<Coup> liste_coupPossible(int pieces) {
+        return this->tab[this->cell_courrante.first][this->cell_courrante.second].coupPossibleCell(pieces);
+    }
 
 
     string toString();

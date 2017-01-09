@@ -16,12 +16,10 @@
 #define COUP_VIDE 0
 #define COUP_X  1
 #define COUP_O  2
+#define DEBUG false
 using namespace std;
 
 static inline int lc2p(int l, int c){ return l * NUM_CELL + c; }
-
-
-
 
 
 

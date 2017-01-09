@@ -6,6 +6,7 @@
 #define INC_9BOARDTICTACTOE_CELL_H
 
 #include "structs.h"
+#include "Coup.h"
 
 class Cell {
 public:
@@ -70,25 +71,25 @@ public:
 
         for (int i = 0; i < TABLE_LENGTH; ++i) {
             if (tab[i][0] == tab[i][1] && tab[i][1] == tab[i][2] && tab[i][0] != COUP_VIDE) {
-                cout << " GAGNÉ  ligne!!!" << endl;
+                if (DEBUG) cout << " GAGNÉ  ligne!!!" << endl;
                 return tab[i][0];
             }
         }
         for (int i = 0; i < TABLE_LENGTH; ++i) {
             if (tab[0][i] == tab[1][i] && tab[1][i] == tab[2][i] && tab[0][i] != COUP_VIDE) {
-                cout << " GAGNÉ  colonne!!!" << endl;
+                if (DEBUG) cout << " GAGNÉ  colonne!!!" << endl;
                 return tab[0][i];
             }
         }
 
         if (tab[0][0] == tab[1][1] && tab[1][1] == tab[2][2] && tab[0][0] != COUP_VIDE) {
-            cout << " GAGNÉ  diagonale!!!" << endl;
+            if (DEBUG)cout << " GAGNÉ  diagonale!!!" << endl;
             return tab[0][0];
         }
 
         if (tab[0][2] == tab[1][1] && tab[1][1] == tab[2][0] && tab[0][2] != COUP_VIDE && tab[1][1] != COUP_VIDE &&
             tab[2][0] != COUP_VIDE) {
-            cout << " GAGNÉ  ligne!!!" << endl;
+            if (DEBUG) cout << " GAGNÉ  oblique!!!" << endl;
             return tab[0][2];
         }
         return COUP_VIDE;
@@ -98,14 +99,27 @@ public:
         for (int i = 0; i < TABLE_LENGTH; ++i) {
             for (int j = 0; j < TABLE_LENGTH; ++j) {
                 if (tab[i][j] == COUP_VIDE) {
-                    return false;
+                    return true;
                 }
             }
         }
-        return true;
+        return false;
     }
 
-
+    vector<Coup> coupPossibleCell(int piece) {
+        vector<Coup> v;
+        Coup a;
+        for (int i = 0; i < TABLE_LENGTH; ++i) {
+            for (int j = 0; j < TABLE_LENGTH; ++j) {
+                if (tab[i][j] == COUP_VIDE) {
+                    a.setQui(piece);
+                    a.set_position(i, j);
+                    v.push_back(a);
+                }
+            }
+        }
+        return v;
+    }
 };
 
 

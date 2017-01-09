@@ -25,9 +25,8 @@ int Coup::getQui() const {
 
 
 
-/*
 string Coup::toString() {
-    string s = "["+to_string(this->position.first)+"]["+to_string(this->position.first)+"]->"+to_string(this->qui);
+    string s = "[" + to_string(this->position_cell.first) + "][" + to_string(this->position_cell.second) + "]->" +
+               to_string(this->qui);
     return s;
 }
-*/

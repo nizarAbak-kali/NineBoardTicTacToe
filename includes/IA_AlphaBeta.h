@@ -1,26 +1,24 @@
 //
-// Created by nizar on 05/01/17.
+// Created by nizar on 09/01/17.
 //
 
-#ifndef INC_9BOARDTICTACTOE_IA_MINIMAX_H
-#define INC_9BOARDTICTACTOE_IA_MINIMAX_H
+#ifndef INC_9BOARDTICTACTOE_IA_ALPHABETA_H
+#define INC_9BOARDTICTACTOE_IA_ALPHABETA_H
 
-#include "structs.h"
-#include "Board.h"
 #include "Player.h"
 
-class IA_MINIMAX : public Player {
+class IA_AlphaBeta : public Player {
 
 public:
     Board *b;
-    int profondeur_max;
+    int profondeur_max_AlphaBeta;
 
-    IA_MINIMAX(string nom, bool tour, int pieces, Board &b, int prof) : Player(nom, tour, pieces) {
+    IA_AlphaBeta(string nom, bool tour, int pieces, Board &b, int prof) : Player(nom, tour, pieces) {
         this->nom = nom;
         this->pieces = pieces;
         this->b = &b;
 
-        this->profondeur_max = prof;
+        this->profondeur_max_AlphaBeta = prof;
         srand((unsigned int) time(0));
     }
 
@@ -42,7 +40,7 @@ public:
             *res = COUP_VIDE;
             return true;
         }
-        if (this->profondeur_max <= prof) {
+        if (this->profondeur_max_AlphaBeta <= prof) {
             if (DEBUG) { cout << "IA FINI PROF " << prof << endl; }
             *res = (std::rand() % 3) - 1;
             return true;
@@ -51,74 +49,83 @@ public:
     }
 
 
-    int max(int profondeur) {
-        if (DEBUG) { cout << "IA Max  profondeur " << profondeur << endl; }
+    int min_AlphaBeta(int profondeur, int alpha, int beta) {
+        if (DEBUG) { cout << "IA min_AlphaBeta: profondeur->" << profondeur << endl; }
 
         int winner = 0;
 
 
         if (fini(profondeur, &winner)) {
+            if (DEBUG) { cout << "IA min_AlphaBeta FINI " << endl; }
             return winner;
         }
 
-        int tmp, res = -2;
-
-        for (int i = 0; i < TABLE_LENGTH; ++i) {
-            for (int j = 0; j < TABLE_LENGTH; ++j) {
-                Coup coup(this->pieces, pair<int, int>(i, j));
-                if (!b->joue(coup)) {
-                    if (DEBUG) { cout << "IA Max ON NE PAS JOUER CE COUP " << coup.toString() << endl; }
-                    continue;
-                }
-
-                tmp = min(profondeur + 1);
-
-                b->dejoue(coup);
-
-                if (tmp > res) res = tmp;
-
-            }
-        }
-        return res;
-    }
-
-    int min(int profondeur) {
-        if (DEBUG) { cout << "IA Min: profondeur->" << profondeur << endl; }
-
-        int winner = 0;
-
-
-        if (fini(profondeur, &winner)) {
-            if (DEBUG) { cout << "IA Min FINI " << endl; }
-            return winner;
-        }
-
-        int tmp, res = 2;
+        int tmp;
 
         for (int i = 0; i < TABLE_LENGTH; ++i) {
             for (int j = 0; j < TABLE_LENGTH; ++j) {
                 int piece = this->pieces == COUP_O ? COUP_X : COUP_O;
                 Coup coup(piece, pair<int, int>(i, j));
                 if (!b->joue(coup)) {
-                    if (DEBUG) { cout << "IA Min ON NE PAS JOUER CE COUP " << coup.toString() << endl; }
+                    if (DEBUG) { cout << "IA min_AlphaBeta ON NE PAS JOUER CE COUP " << coup.toString() << endl; }
                     continue;
                 }
 
-                tmp = max(profondeur + 1);
+                tmp = max_AlphaBeta(profondeur + 1, alpha, beta);
 
                 b->dejoue(coup);
 
-                if (tmp < res) res = tmp;
+                if (tmp < beta)
+                    beta = tmp;
+                if (beta <= alpha)
+                    break;
 
             }
         }
-        return res;
+        return beta;
+    }
+
+    int max_AlphaBeta(int profondeur, int alpha, int beta) {
+        if (DEBUG) { cout << "IA max_AlphaBeta  profondeur " << profondeur << endl; }
+
+        int winner = 0;
+
+
+        if (fini(profondeur, &winner)) {
+            return winner;
+        }
+
+        int tmp;
+
+        for (int i = 0; i < TABLE_LENGTH; ++i) {
+            for (int j = 0; j < TABLE_LENGTH; ++j) {
+                Coup coup(this->pieces, pair<int, int>(i, j));
+                if (!b->joue(coup)) {
+                    if (DEBUG) { cout << "IA max_AlphaBeta ON NE PAS JOUER CE COUP " << coup.toString() << endl; }
+                    continue;
+                }
+
+                tmp = min_AlphaBeta(profondeur + 1, alpha, beta);
+
+                b->dejoue(coup);
+
+                if (tmp > alpha)
+                    alpha = tmp;
+                if (alpha >= beta)
+                    break;
+
+            }
+        }
+        return alpha;
     }
 
     void joue() {
         Coup coup;
         Coup final;
-        int tmp, res = -2;
+        int tmp = -2;
+
+        int alpha = -2;
+        int beta = 2;
         cout << "CELLULE COURRANTE ";
         print_cell(b->cell_courrante);
         if (DEBUG) { cout << "IA" << this->nom << "JOUE : " << endl; }
@@ -131,16 +138,17 @@ public:
                     continue;
                 }
 
-                tmp = min(0);
+                tmp = min_AlphaBeta(0, alpha, beta);
 
                 b->dejoue(coup);
 
-                if (tmp > res) {
-                    res = tmp;
+                if (tmp > alpha) {
+                    alpha = tmp;
                     final.setQui(this->pieces);
                     final.set_position(i, j);
                 }
-
+                if (alpha >= beta)
+                    break;
 
             }
         }
@@ -152,4 +160,4 @@ public:
 
 };
 
-#endif //INC_9BOARDTICTACTOE_IA_MINIMAX_H
+#endif //INC_9BOARDTICTACTOE_IA_ALPHABETA_H
